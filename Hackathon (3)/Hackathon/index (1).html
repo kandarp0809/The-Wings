@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wings</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="color1.css" class="alternate-style" title="color1" disabled>
+    <link rel="stylesheet" href="color3.css" class="alternate-style" title="color3" disabled>
+    <link rel="stylesheet" href="color4.css" class="alternate-style" title="color4">
+    <link rel="stylesheet" href="color5.css" class="alternate-style" title="color5" disabled>
+    <link rel="stylesheet" href="style-switcher.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css link-->
+    <link rel="stylesheet" href="style.css">
+    <script src="script3.js"></script>
+</head>
+<body id="body">
+    
+    <!-- header section -->
+
+    <header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-book-open"></i> The Wings</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#desc">Description</a>
+            <a href="#vacancies">Vacancies</a>
+            <a href="#exp">Past Applicants</a>
+            <a href="#resourse">Resources</a>
+            <a href="#mentor">Mentors</a>
+            <a href="#footer">Contact</a>
+            <a href="profile.html"><img src="profile-user.png" width="30px" height="30px"></a>
+        </nav>
+
+        <div class="fas fa-bars" id="menu"></div>
+
+    </header>
+
+   <!-- end -->
+<!-- home-->
+<section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="text-2" id="name">Hello , Anusha Shripati</div><br>
+            <div class="text-3">This is a site to <span class="typing"></span></div><br>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if (this.scroolY > 20) {
+                $('.navbar').addClass("sticky");
+            } else {
+                $('.navbar').removeClass("sticky");
+            }
+        })
+
+    });
+
+    var typed = new Typed(".typing", {
+        strings: ["Visit", "Learn", "Enjoy"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+    
+</script>
+<!--end-->
+<section class="desc" id="desc">
+    <div class="container">
+        <img src="desc.jpg" alt="Snow">
+        <div class="text-block">Hello Womens , We provide you all to be learning something new and opportunities,<br>
+        like formal training and Tech Women Mentorship Programs, Development<br>
+        It implies that you are willing to hire candidates who do not meet every single listed job qualification.<br>
+        It also shows a commitment to helping employees accrue skills on the job.<br>
+        To help girls feel more comfortable with the tech field, there’s an opportunity to introduce<br>
+        computing and development courses early in elementary school through high school. These programs can encourage<br>
+        young girls to maintain their interest in coding and other Skills.<br>
+        Mentoring is one of the most important confidence builders that can be found day to day on the<br>
+        jobs.</div>
+    </div>
+
+</section>
+<section class="vacancies" id="vacancies" style="margin-right: 0px;">
+    <h1 class="heading">Vacancies</h1>
+    <br><br><br><br><br><br><br>
+    <div class="card">
+        <h1 class="des">Snr. Software Engineer</h1>
+        <p class="price">2,00,000INR</p>
+        <p>company- KnowBe4<br>
+            location - Kochi, Kerala, India<br>
+        Skills: Software Development, Django<br>
+        Full-time</p>
+        <a href="job-app.html"><p><button >Apply Now!</button></p></a>
+    </div>
+    <div class="card">
+        <h1 class="des">Senior Frontend Developer</h1>
+        <p class="price">2,00,000INR</p>
+        <p>company - ThoughtSpot<br>
+        location - Trivandrum, Kerala, India<br>
+        Skills: JavaScript, React.js<br>
+        Full-time<br>
+</p>
+        <a href="job-app.html"><p><button>Apply Now!</button></p></a>
+    </div>
+    <div class="card">
+        <h1 class="des">Telehealth Provider - Women</h1>
+        <p class="price">2,00,000INR</p>
+        <p>company - Maven Clinic<br>
+            location - work from home<br>
+            Skills: Hospitals and Health Care<br>
+            Full-time</p>
+        <a href="job-app.html"><p><button>Apply Now!</button></p></a>
+    </div>
+    <div class="card">
+        <h1 class="des">Gynaec- Infertility Expert</h1>
+        <p class="price">2,00,000INR</p>
+        <p>company - Maven Clinic<br>
+            location - Kerala,india<br>
+            Skills: Surgery,Patient Care,EMR,Diagnosis<br>
+            Full-time</p>
+        <a href="job-app.html"><p><button>Apply Now!</button></p></a>
+    </div>
+</section>
+<section class="exp" id="exp">
+    <h1 class="heading">Past Applicants</h1>
+    <br><br><br><br><br>
+<div class="card">
+    <img src="ellen_pao.jpg"
+        alt="Denim Jeans" class="round">
+    <h1 class="exp1">Ellen K. Pao</h1>
+    <p>Designation: American Invester & Former CEO of Social Media Company Reddit.</p>
+    <a href="https://www.linkedin.com/in/ekpao/"><p><button>Profile</button></p></a>
+</div>
+<div class="card">
+    <img src="danah.jpg"
+        alt="Denim Jeans" class="round">
+    <h1 class="exp1">Danah Boyd</h1>
+    <p>Designation: Founder & President of Data and Society Research Institute.</p>
+    <a href="https://www.linkedin.com/in/danahboyd/"><p><button>Profile</button></p></a>
+</div>
+<div class="card">
+    <img src="kimberly.jpg"
+        alt="Denim Jeans" class="round">
+    <h1>Kimberly Bryant</h1>
+    <p>Designation: Founder and CEO of Black Girls Code and one of "25 Most Influential African-Americans In Technology"</p>
+    <a href=" https://www.linkedin.com/in/kimberlybryant/"><p><button>Profile</button></p></a>
+</div>
+<div class="card">
+    <img src="kate_crawford.jpg"
+        alt="Denim Jeans" class="round">
+    <h1>Kate Crawford</h1>
+    <p>Designation: Co-founder and Former Director of Research of AI Now Institute at NYU</p>
+    <a href="https://www.linkedin.com/in/kate-crawford-a66574"><p><button>Profile</button></p></a>
+</div>
+
+</section>
+<section id="resourse">
+    <iframe src="10 english.html" width="100%" height="600px"></iframe>
+</section>
+<section class="mentor" id="mentor">
+    <h1 class="heading">Mentors</h1>
+<table style=" width: 70%;
+  align-items: center;">
+    <tr class="container1">
+        <td width="50%;margin-right30-x"><a href="https://www.youtube.com/watch?v=fC9da6eqaqg&t=1s">
+            <table style="border: 0; width:600px; height: 200px;"><tr><td width="250px"><img src="reshama.jpg" class="round" style="float: left;"></td><td>
+            <h1 style="font-size: 30px;text-align: center;padding-bottom: 10px;color: aliceblue;">Reshma Saujani</h1><h2 style="color: aliceblue">Reshma Saujani (born November 18, 1975) is an American lawyer, politician, civil servant, and the founder of the
+            nonprofit organization Girls Who Code, which aims to increase the number of women in computer science and close the
+            gender employment difference in that field.</h2>
+            </td></tr></table></a>
+        </td>
+        <td width="50%"><a href="https://www.youtube.com/watch?v=nncY-MA1Iu8&t=3s">
+                <table style="border: 0; width:600px; height: 200px;">
+                    <tr style="padding-left: 30px;">
+                        <td width="250px"><img src="arianna.jpg" class="round"
+                                style="float: right;"></td>
+                        <td>
+                            <h1 style="font-size: 30px;text-align: center;padding-bottom: 10px;color: aliceblue;">Arianna Huffington
+                            </h1>
+                            <h2 style="color: aliceblue;text-align: right;">Arianna Huffington is a Greek American author, syndicated columnist and businesswoman. She is a co-founder of The
+                            Huffington Post, the founder and CEO of Thrive Global,[1] and the author of fifteen books.
+</h2>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+        </td>
+    </tr>
+    <tr class="container1">
+        <td width="50%"><a href="https://www.youtube.com/watch?v=RLTgnOuYb6o">
+                <table style="border: 0; width:600px; height: 200px;">
+                    <tr>
+                        <td width="250px"><img src="oprah.jpg" class="round"
+                                style="float: left;"></td>
+                        <td>
+                            <h1 style="font-size: 30px;text-align: center;padding-bottom: 10px;color: aliceblue;">Oprah
+                                Winfrey</h1>
+                            <h2 style="color: aliceblue">Oprah Winfrey is a media mogul, talk show host, actress, producer,
+                                and philanthropist. She is best known as host of The
+                                Oprah Winfrey Show, which aired for 25 seasons, from 1986 to 2011.</h2>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+        </td>
+        <td width="50%"><a href="https://www.youtube.com/watch?v=18uDutylDa4">
+                <table style="border: 0; width:600px; height: 200px;">
+                    <tr style="padding-left: 30px;">
+                        <td width="250px"><img src="sheryl.jpg" class="round"
+                                style="float: right;"></td>
+                        <td>
+                            <h1 style="font-size: 30px;text-align: center;padding-bottom: 10px;color: aliceblue;">Sheryl Sandberg
+                            </h1>
+                            <h2 style="color: aliceblue;text-align: right;">Sheryl Kara Sandberg (born August 28, 1969) is an American business executive, billionaire, and philanthropist.
+                            Sandberg served as chief operating officer (COO) of Meta Platforms, a position from which she stepped down in August
+                            2022. She is also the founder of LeanIn.Org.
+                        </h2>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+        </td>
+    </tr>
+</table>
+</section>
+<!-- footer -->
+
+<!-- footer -->
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3><i class="fas fa-book-open"></i>The Wings</h3>
+            <p>"Spread your wings and go your way to learn..."</p>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"><i class="fas fa-phone"></i> 9985315835</a>
+            <a href="#"><i class="fas fa-phone"></i> 9843524385</a>
+            <a href="#"><i class="fas fa-envelope"></i> abc123@gmail.com</a>
+            <a href="#"><i class="fas fa-map"></i> Gujrat,India</a>
+        </div>
+
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="#"><i class="fab fa-pinterest"></i>Pinterest</a>
+        </div>
+
+    </div>
+
+
+</section>
+<!-- end -->
+    <!-- end -->
+<div class="style-switcher open">
+    <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    
+    <h4>Theme Colours</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color1')"></span>
+        <span class="color-3" onclick="setActiveStyle('color3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color5')"></span>
+
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script src="style-switcher.js"></script>
+
+    <!-- custom js link -->
+    <script src="script1.js"></script>
+      
+</body>
+</html>
